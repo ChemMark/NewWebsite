@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #7b838a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rubik", sans-serif;
+  color: #002347;
+}
+
+a {
+  color: #7b838a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #fdc632;
+}
+
+/* Header and Navigation */
+.header_area {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: #000 !important; /* Force black text */
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7b838a;
+  padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #fdc632;
+}
+
+/* Home Banner */
+.home_banner_area {
+  background-size: cover;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.banner_content {
+  text-align: center;
+  color: #7b838a;
+}
+
+.banner_content h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.banner_content p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Product Categories */
+.popular_courses {
+  padding: 100px 0;
+}
+
+.main_title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main_title h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.main_title p {
+  font-size: 16px;
+  color: #7b838a;
+}
+
+.single_course {
+  background: #f9f9ff;
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.single_course:hover {
+  box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.1);
+}
+
+.single_course img {
+  width: 100%;
+  height: auto;
+}
+
+.single_course h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.single_course p {
+  font-size: 14px;
+  color: #7b838a;
+}
+
+/* Contact Section */
+.contact_area {
+  padding: 100px 0;
+}
+
+.contact_info {
+  margin-bottom: 30px;
+}
+
+.contact_info h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact_info p {
+  font-size: 16px;
+  color: #7b838a;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+.footer-area {
+  background: #002347;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-area h4 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-area a {
+  color: #7b838a;
+}
+
+.footer-area a:hover {
+  color: #fdc632;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .navbar-nav {
+    background: #fff;
+    padding: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+
+  .home_banner_area {
+    min-height: 400px;
+  }
+
+  .banner_content h1 {
+    font-size: 36px;
+  }
+
+  .banner_content p {
+    font-size: 16px;
+  }
+
+  .popular_courses {
+    padding: 50px 0;
+  }
+
+  .main_title h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home_banner_area {
+    min-height: 300px;
+  }
+
+  .banner_content h1 {
+    font-size: 28px;
+  }
+
+  .banner_content p {
+    font-size: 14px;
+  }
+
+  .single_course {
+    margin-bottom: 20px;
+  }
+}
