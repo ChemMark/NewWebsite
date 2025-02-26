@@ -232,12 +232,23 @@
     <script>
       $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
-          items: 3, // Number of items to display
-          margin: 10, // Space between items
-          loop: true, // Enable looping of items
-          autoplay: true, // Enable autoplay
-          autoplayTimeout: 3000, // Autoplay interval
-          autoplayHoverPause: true // Pause autoplay on hover
+          items: 3, // Default items for larger screens
+          margin: 10,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: { // Mobile devices (up to 480px)
+              items: 1, // Show 1 item on mobile screens
+            },
+            600: { // Tablets (up to 768px)
+              items: 2, // Show 2 items on tablets
+            },
+            1000: { // Desktop screens
+              items: 3, // Show 3 items on larger screens
+            }
+          }
         });
       });
     </script>
